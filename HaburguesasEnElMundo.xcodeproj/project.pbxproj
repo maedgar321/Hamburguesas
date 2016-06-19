@@ -26,6 +26,7 @@
 		FA1115741D174E2C00305BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA11157A1D174F3900305BC1 /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 		FA11157C1D17565600305BC1 /* ColoresStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoresStruct.swift; sourceTree = "<group>"; };
+		FA11157E1D175BE700305BC1 /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				FA1115741D174E2C00305BC1 /* Info.plist */,
 				FA11157A1D174F3900305BC1 /* Datos.swift */,
 				FA11157C1D17565600305BC1 /* ColoresStruct.swift */,
+				FA11157E1D175BE700305BC1 /* test.playground */,
 			);
 			path = HaburguesasEnElMundo;
 			sourceTree = "<group>";

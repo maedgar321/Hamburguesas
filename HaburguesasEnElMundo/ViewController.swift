@@ -16,8 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var etiquetaPais: UILabel!
     @IBOutlet var etiquetaHamburguesa: UILabel!
-    
-    
+    @IBOutlet var etiquetaPrecio: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +31,12 @@ class ViewController: UIViewController {
 
     @IBAction func cambiaDatos(sender: AnyObject) {
         
+        let precioInt = Int (arc4random()) % 1000;
+        var precioString = String(precioInt);
+        precioString  = "$" + precioString;
         etiquetaPais.text = datosPaises.obtenPais();
         etiquetaHamburguesa.text = datosHamburguesas.obtenHamburguesa();
+        etiquetaPrecio.text = precioString;
         view.backgroundColor = datosColores.regresaColorAleatorio();
         view.tintColor = datosColores.regresaColorAleatorio();
         
