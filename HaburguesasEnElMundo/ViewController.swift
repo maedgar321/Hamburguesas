@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var datosPaises = ColeccionDePaises();
+    var datosHamburguesas = ColeccionDeHamburguesa();
+    var datosColores = Colores();
+    
+    @IBOutlet var etiquetaPais: UILabel!
+    @IBOutlet var etiquetaHamburguesa: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +30,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func cambiaDatos(sender: AnyObject) {
+        
+        etiquetaPais.text = datosPaises.obtenPais();
+        etiquetaHamburguesa.text = datosHamburguesas.obtenHamburguesa();
+        view.backgroundColor = datosColores.regresaColorAleatorio();
+        view.tintColor = datosColores.regresaColorAleatorio();
+        
+    }
 }
 
